@@ -12,7 +12,16 @@ const TodoSchema = new mongoose.Schema({
   userId: {
     type: String,
     required: true
+  },
+  dueDate: {
+    type: String,
+    required: true
+  },
+  listName:{
+    type: String,
+    required: true
   }
 })
 
 module.exports = mongoose.model('Todo', TodoSchema)
+
